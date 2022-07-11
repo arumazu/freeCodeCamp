@@ -26,45 +26,77 @@
 
             <main>           
                 <form action="" id="survey-form">
-            
-                    <label for="" id="name-label" required>Name </label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
                     
+                    <fieldset>
+                        <label for="name" id="name-label" required>Name </label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
         
-                    <label for="" id="email-label">Email </label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                        <label for="email" id="email-label">Email </label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
                    
-                   
-                    <label for="" id="number-label">Age (optional) </label>
-                    <input type="number" id="number" placeholder="Enter your age" min="10" max="99">
-                   
-        
-                    <label for="">Which option best describes your current role? </label>
-                        <select name="" id="dropdown">
-                            <option value="" selected disabled>Select current role</option>
-                            <option value="Student">Student</option>
-                            <option value="ull Time Job">Full Time Job</option>
-                            <option value="Full Time Learner">Full Time Learner</option>
-                            <option value="Prefer not to say">Prefer not to say</option>
-                            <option value="Other">Other</option>
-                        </select>
+                        <label for="age" id="number-label">Age (optional) </label>
+                        <input type="number" id="age" placeholder="Enter your age" min="10" max="99">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="role-select">Which option best describes your current role? </label>
+                            <select name="role-select" id="role-select">
+                                <option value="" selected disabled>Select current role</option>
+                                <option value="Student">Student</option>
+                                <option value="ull Time Job">Full Time Job</option>
+                                <option value="Full Time Learner">Full Time Learner</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                                <option value="Other">Other</option>
+                            </select>
+                    </fieldset>
 
-                    <fieldset class="recommend">
+                    <fieldset>
                         <legend>Would you recommend freeCodeCamp to a friend? </legend>
                         
-                        <input type="radio" name="recommendation" id="definitely" checked><label for=""> Definitely</label>            
+                        <label for=""><input type="radio" name="recommendation" id="definitely" value="definitely" class="inline" checked> Definitely</label>           
+                        <label for=""><input type="radio" name="recommendation" id="maybe" value="maybe" class="inline"> Maybe</label>   
+                        <label for=""><input type="radio" name="recommendation" id="not-sure" value="not-sure" class="inline"> Not sure</label>    
                     
-                        <input type="radio" name="recommendation" id="maybe"><label for=""> Maybe</label>            
-                
-                        <input type="radio" name="recommendation" id="not-sure"><label for=""> Not sure</label>           
-                    </fieldset>       
-                   <label for="">Any comments or suggestions? </label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                
+                    </fieldset> 
+                    
+                    <fieldset>
+                        <label for="dropdown">What is your favorite feature of freeCodeCamp? </label>
+                        <select name="dropdown" id="dropdown">
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="1">Challenges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                            <option value="4">Open Source</option>
+                        </select>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="improve">What would you like to see improved? (Check all that apply)</label>
+                        <input type="checkbox" name="improve" value="1" class="inline"> Back-end Projects <br />
+                        <input type="checkbox" name="improve" value="2" class="inline"> Front-end Projects <br />
+                        <input type="checkbox" name="improve" value="3" class="inline"> Data Visualization <br />
+                        <input type="checkbox" name="improve" value="4" class="inline"> Challenges <br />
+                        <input type="checkbox" name="improve" value="5" class="inline"> Open Source Community<br /> 
+                        <input type="checkbox" name="improve" value="6" class="inline"> Glitter help rooms <br />
+                        <input type="checkbox" name="improve" value="7" class="inline"> Videos <br />
+                        <input type="checkbox" name="improve" value="8" class="inline"> City Meetups <br />
+                        <input type="checkbox" name="improve" value="9" class="inline"> Wiki <br />
+                        <input type="checkbox" name="improve" value="10"class="inline"> Forum <br />
+                        <input type="checkbox" name="improve" value="11"class="inline"> Additional Courses <br />
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="suggestions">Any comments or suggestions? </label>
+                        <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+                    </fieldset>
+
                 <button type="submit" id="submit">Submit</button>
                 </form>
              </main> 
     </div>
+<!--
         <script src="" async defer></script>
+--> 
     </body>
 </html>
