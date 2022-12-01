@@ -20,3 +20,4 @@ Now that you understand the CSS box model, let's get started on the Rothko paint
 - [Learn CSS Box Model and its Properties with Examples](https://www.simplilearn.com/tutorials/css-tutorial/css-box-model)
 - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks)
 - [CSS/Training/Box model](https://www.w3.org/community/webed/wiki/CSS/Training/Box_model)
+- <https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=10157s>
